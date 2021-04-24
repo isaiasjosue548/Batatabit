@@ -101,7 +101,7 @@ main {
     width: 100%;
     height: auto;
     padding-top: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     text-align: center;
 }
 .main-exchange-container--title{
@@ -234,8 +234,90 @@ main {
 .currency__table--date--comisiones {
     width: max-content;
     height: 30px;
-    margin: 55px auto 0;
+    margin: 15px auto 0;
     padding: 8px;
     background-color: var(--soft-blue);
     border-radius: 8px;
+}
+
+.main__product--detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+    
+}
+.product__detail--batata-logo {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background: url('./assets/icons/batata.svg');
+    left: calc(50% - 20px);
+    top: -10px;
+}
+.product__detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.product__detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--just-white);
+}
+.product__detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.product__detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto; 
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product__detail--card .icon-card {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;  
+}
+.product__detail--card .clock {
+    background: url('./assets/icons/clock.svg') center/cover no-repeat;
+}
+.product__detail--card .eye {
+    background: url('./assets/icons/eye.svg') center/cover no-repeat;
+}
+.product__detail--card .dollar {
+    background: url('./assets/icons/dollar-sign.svg') center/cover no-repeat;
+}
+.product__detail--card .circle {
+    background: url('./assets/icons/check-circle.svg') center/cover no-repeat;
+}
+.product__card--title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.product__card--body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
 }
