@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -16,7 +17,7 @@
         <div class="header--title-container">
             <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
             <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <a href="#plans" class="header--button">Conoce Nuestros Planes <span></span></a>
+            <a href="#recomendado" class="header--button">Conoce Nuestros Planes <span></span></a>
         </div>
     </header>
     <main>
@@ -29,10 +30,10 @@
 
             <section class="main__tables--container">
                 <div class="main__currency--table">
-                    <p class="currency__table--title">Monedas</p>
-
+                    
                     <div class="currency__table--container">
                         <table>
+                            <p class="currency__table--title">Monedas</p>
                           <tr>
                               <td class="table__top--left">Bitcoin</td>
                               <td class="table__top--right table__right">$ 1.96 <span class="down"></span></td>
@@ -50,71 +51,67 @@
                                <td class="table__bottom--right table__right">$ 4.96 <span class="down"></span></td>
                            </tr> 
                         </table>
+
+                        <div class="currency__table--date">
+                            <p> <b> Actualizado:</b> 19 Julio 23:45 </p>
+                        </div>
                     </div>
+                    
+                    <div class="currency__table--container">
+                        <table>
+                            <p class="currency__table--title comisiones">Comisiones</p>
+                          <tr>
+                              <td class="table__top--left">Bitrade</td>
+                              <td class="table__top--right table__right">$ 12.96</td>
+                          </tr>
+                          <tr>
+                               <td>Bitpreco</td>
+                               <td class="table__right">$ 13.07</td>
+                           </tr>
+                           <tr> 
+                               <td>Novadax</td>
+                               <td class="table__right">$ 13.15</td>
+                           </tr>
+                           <tr>
+                               <td class="table__bottom--left">Coinext</td>
+                               <td class="table__bottom--right table__right">$ 14.96 </span></td>
+                           </tr> 
+                        </table>
 
-                    <div class="currency__table--date">
-                        <p> <b> Actualizado:</b> 19 Julio 23:45</p>
-                    </div>
-
-                    <div class="currency__table--comisiones">
-                            <table>
-                            <p class="currency__title--comisiones">Comisiones</p>
-                            <tr>
-                                <td class="table__top--left">Bitrade</td> 
-                                <td class="table__top--right table__right">$ 12.96</td>
-                            </tr>
-                            <tr>
-                                <td>Bitpreco</td>
-                                <td class="table__right">$ 13.07</td>
-                            </tr>
-                            <tr>
-                                <td>Novadax</td>
-                                <td class="table__right">$ 13.5</td>
-                            </tr>
-                            <tr>
-                                <td class="table__bottom--left">Coinext</td>
-                                <td class="table__bottom--right table__right">$ 14.96</td>
-                            </tr>
-                            </table>    
-
-                            <div class="currency__table--date--comisiones">
-                                <p><b> Actualizado:</b> 19 Julio 23:45</p>
-                            </div>
+                        <div class="currency__table--date blue">
+                            <p> <b> Actualizado:</b> 19 Julio 23:48 </p>
+                        </div>
                     </div>
                 </div>
             </section>
         </section>
+
          <section class="main__product--detail">
              <span class="product__detail--batata-logo"></span>
              <div class="product__detail--title">
                  <h2>Creamos un producto sin comparación.</h2>
                  <p>Confiable y diseñado para su uso diario.</p>
              </div>
+
              <section class="product__cards--container">
                  <article class="product__detail--card">
                      <span class="clock icon-card"></span>
                      <p class="product__card--title">Tiempo Real</p>
                      <p class="product__card--body">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
                  </article>
-             </section>
 
-             <section class="product__cards--container">
-                <article class="product__detail--card">
+                 <article class="product__detail--card">
                     <span class="eye icon-card"></span>
                     <p class="product__card--title">No hay tasas escondidas</p>
                     <p class="product__card--body">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
                 </article>
-             </section>
 
-             <section class="product__cards--container">
                 <article class="product__detail--card">
                     <span class="dollar icon-card"></span>
                     <p class="product__card--title">Compara monedas</p>
                     <p class="product__card--body">No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
                 </article>
-             </section>
 
-             <section class="product__cards--container">
                 <article class="product__detail--card">
                     <span class="circle icon-card"></span>
                     <p class="product__card--title">Información confiable</p>
@@ -122,10 +119,12 @@
                 </article>
              </section>
          </section>
+
          <section class="bitcoin__img--container">
              <h2>Conocelo hoy.</h2>
          </section>
-         <section id="plans" class="main__plans--container">
+
+         <section class="main__plans--container">
                 <div class="plans__title">
                     <h2>Escoge el plan que mejor se ajuste a ti.</h2>
                     <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
@@ -133,6 +132,16 @@
 
                 <section class="plans__container--slider">
                     <article class="plans__container--card">
+                        <p class="recommended basic__p">Basico</p>
+                            <div class="plan__info--container">
+                                <h3 class="plan__card--title">Pago Mensual</h3>
+                                <p class="plan__card--price"><span>$</span> 19</p>
+                                <p class="plan__card--saving">* Plan Basic Mensual.</p>
+                                <button class="plan__card--ca">Escoger este <span></span></button>
+                            </div>
+                    </article>
+
+                    <article id="recomendado" class="plans__container--card">
                         <p class="recommended">Recomendado</p>
                         <div class="plan__info--container">
                             <h3 class="plan__card--title">Pago Anual</h3>
@@ -141,21 +150,7 @@
                             <button class="plan__card--ca">Escoger este <span></span></button>
                         </div>
                     </article>
-                </section>
 
-                <section class="plans__container--slider">
-                    <article class="plans__container--card">
-                        <p class="recommended basic__p">Basico</p>
-                        <div class="plan__info--container">
-                            <h3 class="plan__card--title">Pago Mensual</h3>
-                            <p class="plan__card--price"><span>$</span> 19</p>
-                            <p class="plan__card--saving">* Plan Basic Mensual.</p>
-                            <button class="plan__card--ca">Escoger este <span></span></button>
-                        </div>
-                    </article>
-                </section>
-
-                <section class="plans__container--slider">
                     <article class="plans__container--card">
                         <p class="recommended expert">Expert Plus <span>+</span></p>
                         <div class="plan__info--container">
@@ -167,9 +162,20 @@
                     </article>
                 </section>
          </section>
-
     </main>
     <footer>
+        <section class="left">
+            <ul>
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Crunchbase</a></li>
+                <li><a href="">Hackernews</a></li>
+            </ul>
+        </section>
+        <section class="right">
+            <figure>
+                <img src="./assets/img/logo-footer.svg" alt="LogoBatatabit2021">
+            </figure>
+        </section>
     </footer>
 </body>
 </html>
